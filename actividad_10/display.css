@@ -1,0 +1,35 @@
+.inline1 { 
+    display: inline;
+    background-color: blue;
+    width: 100px;
+}
+
+.inline2 { 
+    display: inline;
+    background-color: aquamarine;
+    width: 200px;
+}
+
+.block1 { 
+    display: block;
+    background-color: rgb(66, 188, 240);
+    width: 300x;
+}
+
+.block2 { 
+    display: block;
+    background-color: rgb(186, 205, 12);
+    width: 350x;
+}
+
+a {
+    display: inline-block;
+    width: 30px;
+
+}
+
+p {
+    display: none;
+    
+}
+

@@ -1,0 +1,30 @@
+.estatico {
+    position: static;
+    background-color: aqua;
+    width: 300px;
+    height: 100px;
+}
+
+.absoluto {
+    position: absolute;
+    background-color: rgb(207, 204, 204);
+    width: 400px;
+    height: 100px;
+}
+
+.relativo {
+    position: relative;
+    background-color: aquamarine;
+    width: 30%;
+    height: 100px;
+    top: 100px;
+    left: 250px;
+}
+
+.fixeado {
+    position: fixed;
+    background-color: rgb(230, 132, 213);
+    width: 200px;
+    height: 100px;
+    left: 200px;
+}
