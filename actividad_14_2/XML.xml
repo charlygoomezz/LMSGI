@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ciudad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="XSD.xsd">
+    <nombre>Madrid</nombre>
+    <codigo_identificador>as-12345</codigo_identificador>
+    <poblacion>50000</poblacion>
+    <alcalde>
+        <nombre_alcalde>Juan</nombre_alcalde>
+        <apellido_alcalde>Gomez Perez</apellido_alcalde>
+        <edad>45</edad>
+        <telefono>34612345678</telefono>
+        <email>juan.gomez@example.com</email>
+    </alcalde>
+    <funcionario>
+        <id_funcionario>F1</id_funcionario>
+        <nombre_apellidos_funcionario>Pablo Rodriguez Castro</nombre_apellidos_funcionario>
+        <codigo_postal>28001</codigo_postal>
+        <fecha_nacimiento>15/06/1990</fecha_nacimiento>
+        <contrasena>A21@yhgtr4d</contrasena>
+        <cuenta_bancaria>ES1234 5678 9012</cuenta_bancaria>
+    </funcionario>
+</ciudad>

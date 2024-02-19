@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="ciudad">
+        <complexType>
+            <sequence>
+                <element name="nombre">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="[A-Z][a-z]{3,20}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="codigo_identificador">
+                    <simpleType>
+                        <restriction base="string">
+                            <pattern value="[\D]{2}-[\d]{2,5}"></pattern>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="poblacion">
+                    <simpleType>
+                        <restriction base="integer">
+                            <minInclusive value="100"/>
+                            <maxInclusive value="100000"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="alcalde">
+                    <complexType>
+                        <sequence>
+                            <element name="nombre_alcalde">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[A-Z][a-zA-Z]{0,9}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="apellido_alcalde">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[A-Z][a-z]+\s[A-Z][a-z]+"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="edad">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <minInclusive value="18"/>
+                                        <maxInclusive value="120"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="telefono">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <pattern value="(34)[0-9]{9}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="email">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+                    </complexType>   
+                </element>
+                <element name="funcionario" minOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="id_funcionario">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value=".{0,9}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="nombre_apellidos_funcionario">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="((\D+\s\D+\s\D+){0,49})"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="codigo_postal">
+                                <simpleType>
+                                    <restriction base="integer">
+                                       <pattern value="[0-9]{5}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="fecha_nacimiento">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="\d{2}/\d{2}/\d{4}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="contrasena">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[A-Z](\d{2})+[%$@!].{7,}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="cuenta_bancaria">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="ES\d{4}\s\d{4}\s\d{4}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+                    </complexType>   
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
