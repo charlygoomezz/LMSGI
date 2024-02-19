@@ -1,0 +1,42 @@
+/*
+Para el selector de las clases "tnr" que afecte solo a las etiquetas P, 
+deben de tener un borde solido de 3 px de tamaño y de color azul. Se debe 
+de hacer este estilo con una sola propiedad.
+*/
+
+p.tnr{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+
+/*
+Para el selector de las etiquetas H1, deben de tener un borde solido de 3 px 
+de tamaño y de color azul. Se debe de hacer este estilo con varias propiedades.
+*/
+
+h1{
+    text-transform: capitalize;
+    color: blue;
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+
+}
+
+/*
+Crear un selector por id "especial". Dicho selector dejará un espacio entre 
+las letras de 3px y un espacio entre las palabras de 8 px. Además dejará un 
+sangrado inicial de 10px. Comprobar que funcione para una etiqueta H2
+*/
+
+#h2especial{
+    border-right-color: red;
+    border-left-color: blue;
+    border-bottom-style: dashed;
+    border-top-style:dotted ;
+}
+

@@ -1,0 +1,16 @@
+ul.ul1{
+    list-style-image: url(img9/3873119_game_shoes_sneakers_sport_sportwear_icon.png);
+}
+
+ol.ol1{
+    list-style-type: upper-alpha;
+}
+
+ul.ulesp{
+    list-style-type: square;
+}
+
+ol.olesp{
+    list-style-type: lower-roman;
+}
+
