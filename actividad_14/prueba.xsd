@@ -1,0 +1,106 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del tipo simple "tipo" que solo puede ser numérico -->
+  <xs:simpleType name="tipo">
+    <xs:restriction base="xs:integer"/>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "nif" que tiene que tener exactamente 9 caracteres -->
+  <xs:simpleType name="nif">
+    <xs:restriction base="xs:string">
+      <xs:length value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "via" que solo puede ser "calle", "plaza", "via" o "camino" -->
+  <xs:simpleType name="via">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="calle"/>
+      <xs:enumeration value="plaza"/>
+      <xs:enumeration value="via"/>
+      <xs:enumeration value="camino"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "dni" que tiene que tener exactamente 8 caracteres -->
+  <xs:simpleType name="dni">
+    <xs:restriction base="xs:string">
+      <xs:length value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "salario" que tiene que estar entre 900 y 5000 euros -->
+  <xs:simpleType name="salario">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="900"/>
+      <xs:maxInclusive value="5000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "moneda" que solo puede ser "euros", "dolares" o "yenes" -->
+  <xs:simpleType name="moneda">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="euros"/>
+      <xs:enumeration value="dolares"/>
+      <xs:enumeration value="yenes"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo simple "capital_social" que tiene un atributo "moneda" y un valor de tipo double con un mínimo de 3000 -->
+  <xs:simpleType name="capital_social">
+    <xs:restriction base="xs:double">
+      <xs:minInclusive value="3000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo complejo "direccion" que tiene un elemento "via" y un elemento "nombre" -->
+  <xs:complexType name="direccion">
+    <xs:sequence>
+      <xs:element name="via" type="via"/>
+      <xs:element name="nombre" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo complejo "empleado" que tiene un atributo "dni", un elemento "nombre", un elemento "direccion", un elemento "salario" y un elemento "estaCasado" opcional -->
+  <xs:complexType name="empleado">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="direccion" type="direccion">
+        <xs:maxLength value="250"/>
+      </xs:element>
+      <xs:element name="salario" type="salario"/>
+      <xs:element name="estaCasado" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="dni" type="dni" use="required"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo complejo "empresa" que tiene un atributo "nif", un atributo "pais" con el valor fijo "españa", un atributo "fecha_creacion" opcional, un elemento "nombre", un elemento "tipo", un elemento "direccion" y un elemento "capital_social" -->
+  <xs:complexType name="empresa">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string">
+        <xs:minLength value="3"/>
+        <xs:maxLength value="15"/>
+      </xs:element>
+      <xs:element name="tipo" type="tipo"/>
+      <xs:element name="direccion" type="direccion"/>
+      <xs:element name="capital_social" type="capital_social">
+        <xs:attribute name="moneda" type="moneda" use="required"/>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="nif" type="nif" use="required"/>
+    <xs:attribute name="pais" type="xs:string" use="required" fixed="españa"/>
+    <xs:attribute name="fecha_creacion" type="xs:date" use="optional"/>
+  </xs:complexType>
+
+  <!-- Definición del elemento raíz "empresas" que puede contener uno o más elementos "empresa" -->
+  <xs:element name="empresas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empresa" type="empresa" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
