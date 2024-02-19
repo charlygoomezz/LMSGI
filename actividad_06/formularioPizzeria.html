@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizzeria Donatello</h1>
+    <form action="procesarPeticion.jsp" method="get">
+        <fieldset>
+            <legend>Información del Cliente</legend>
+            <label for="nombre">Nombre Completo</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre y apellidos" required>
+            <br>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" >
+            <br>
+            <label for="direccion">Dirección de entrega</label>
+            <input id="direccion" type="text" name="direccion" placeholder="Escriba una dirección" required>
+            <br>
+            <label for="email">Correo Electrónico</label>
+            <input id="email" type="email" name="email" placeholder="ejemplo@ejemplo.com">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" min="18" max="100" name="edad" placeholder="26" required>
+            <br/>
+            <label for="medidaPizza">Pedido Pizza</label>
+            <br/>
+            <input type="radio" name="medidaPizza" value="P">Pequeña(8 pulgadas)<br />
+            <input type="radio" name="medidaPizza" value="M">Mediana(12 pulgadas)<br />
+            <input type="radio" name="medidaPizza" value="G">Grande(16 pulgadas)<br />
+            <br/>
+            <label for="masa">Tipo de masa</label>
+            <br/>
+            <input type="radio" name="masa" value="P">Masa Fina<br />
+            <input type="radio" name="masa" value="P">Masa Normal<br />
+            <input type="radio" name="masa" value="P">Masa Gruesa<br />
+            <br/>
+            <label for="ingredientes">Selecciona tus ingredientes(varios)</label>
+            <br/>
+            <input type="checkbox" name="ingredientes" value="PP">Pepperoni<br />
+            <input type="checkbox" name="ingredientes" value="JV">Judía verdes<br />
+            <input type="checkbox" name="ingredientes" value="J">Jamón<br />
+            <input type="checkbox" name="ingredientes" value="AL">Alcaparras<br />
+            <input type="checkbox" name="ingredientes" value="AC">Aceitunas<br />
+            <input type="checkbox" name="ingredientes" value="C">Cebolla<br />
+            <input type="checkbox" name="ingredientes" value="S">Salchicha<br />
+            <input type="checkbox" name="ingredientes" value="PI">Piña<br />
+            </br>
+            <label for="salsa">Elige una salsa</label>
+            <br/>
+            <input type="radio" name="salsa" value="T">Tomate<br />
+            <input type="radio" name="salsa" value="B">Barbacoa<br />
+            <input type="radio" name="salsa" value="PE">Pesto<br />
+            <input type="radio" name="salsa" value="SS">Sin Salsa<br />
+            <br/>
+            <label for="instrucciones">Instrucciones expeciales</label>
+            <br/>
+            <textarea style="resize: none;" name="instrucciones" id="instrucciones" cols="60" rows="5" 
+                    placeholder="Indique alguna instrucción especial si es necesario"></textarea>
+            <br/>
+            <label for="pago">Método de pago</label>
+            <select name="pago">
+                <option value="EF">Efectivo</option>
+                <option value="PY">PayPal</option>
+                <option value="TC" selected>Tarjeta de crédito</option>
+            </select>
+            <br />
+            <br />
+            <label for="terminos">¿Acepta los terminos de uso? </label>
+            <a href="terminos.html">Terminos y Condiciones</a>
+            <br/>	
+            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="X" />
+            <br/>
+            <input type="submit" value="Enviar Pedido" />
+            <input type="reset" value="Resetear">	
+
+
+        
+        </fieldset>        
+    </form>
+</body>
+</html>
