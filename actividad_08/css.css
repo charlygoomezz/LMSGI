@@ -1,0 +1,48 @@
+/*Requisitos
+El primer artículo de cada sección debe contener un párrafo de texto 
+y una imagen que ocupe el 60% del ancho total de la sección.
+*/
+.article1 {
+    width: 60%;
+}
+
+/*
+El segundo artículo de cada sección debe tener otro párrafo y una 
+imagen que tenga una anchura fija de 500 píxeles.
+*/
+.article2 {
+    width: 500px;
+    color: darkred !important;
+}
+
+/*
+La cabecera de la primera sección debe de tener un tamaño de 10 píxeles.
+*/
+.h3-1 {
+    font-size: 10px;
+} 
+
+/*
+La cabecera de la segunda sección debe de tener un tamaño de 2em.
+*/
+.h3-2 {
+    font-size: 2em;
+}
+
+/*HERENCIA
+Aplica colores a nivel global para las secciones (<section>), pero 
+luego en el segundo articulo se debe de sobrescribir el color heredado 
+de la etiqueta padre por otro color diferente. 
+*/
+
+section {
+    color: rgb(60, 0, 255);
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+body {
+    background-image: url("img/fondo.jpeg") ;
+    background-size: cover;
+}
