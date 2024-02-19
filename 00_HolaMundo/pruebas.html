@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PIZZERIA DONATELLO</h1>
+    <form action="procesarpeticion.jsp" method="post">
+        <fieldset>
+            <legend>Info cliente</legend>
+            <label for="nombre">Nombre Completo</label>
+            <input id="nombre" type="text" name="nombre" placeholder="nombre y apellidos" required>
+            <br>
+            <label for="contrseña">Contraseña</label>
+            <input id="contrseña" type="password" name="contrseña" hidden>
+            <br>
+            <label for="direccion">Dirección</label>
+            <input id="direccion" type="text" name="direccion" required>
+            <br>
+            <label for="telefono">Numero de telefono</label>
+            <input id="tlefono" type="number" name="number" required>
+            <br>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" min="18" max="120" required name="edad">
+
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
