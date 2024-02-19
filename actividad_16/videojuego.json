@@ -1,0 +1,46 @@
+{"videojuego":{
+    "id": 1,
+    "nombre": "Assassins Creed",
+    "fecha_creación": "07/03/2007",
+    "lista_programadores" :[
+        {
+            "id": "A",
+            "nombre": "Patrice",
+            "apellidos": "Désilets",
+            "DNI": "12345678X",
+            "fecha_nacimiento" : "12/04/1980",
+            "dirección":{
+                "tipo_via": "Calle",
+                "nombre_via": "Rio del Oro",
+                "codigo_postal": "23456",
+                "pais": "Francia"  
+            }
+        },
+        {
+            "id": "B",
+            "nombre": "Jade",
+            "apellidos": "Raymond",
+            "DNI": "98765432M",
+            "fecha_nacimiento" : "8/09/1982",
+            "dirección":{
+                "tipo_via": "Avenida",
+                "nombre_via": "Del Roscon",
+                "codigo_postal": "26374",
+                "pais": "Estados Unidos"  
+            }
+        }],    
+    "compania": {
+        "ID": "XYZ",
+        "nombre": "Ubisoft",
+        "NIF": "2123413Z",
+        "dirección":{
+            "tipo_via": "Boulevard",
+            "nombre_via": "Saint Laurent",
+            "codigo_postal": "02312",
+            "pais": "Canada"  
+
+        }
+
+    }
+  }
+ }
