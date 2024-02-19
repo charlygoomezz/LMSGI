@@ -1,0 +1,62 @@
+/*Cambia el color del texto a blanco en todos
+ los elementos de lista del primer articulo de cada sección.
+Se debe hacer mediante selector de clase.
+*/
+li.blanco {
+    color: whitesmoke
+}
+
+/*Aplica un fondo de color gris claro (#f0f0f0) a todos
+ los elementos de lista del primer articulo de cada sección.
+  Se debe hacer mediante selector de clase.
+*/
+article.gris{
+    background-color: grey
+}
+
+/*Cambia el color del texto a azulo en todos los elementos de lista
+ del segundo articulo de cada sección. Se debe hacer mediante selector de clase.
+*/
+li.azul{
+    color: blue;
+}
+/*Aplica un fondo de color rojo a todos los elementos de lista del segundo
+ articulo de cada sección. Se debe hacer mediante selector de clase.
+*/
+article.rojo{
+    background-color: red;
+}
+/*La cabecera de la página (<header>) tendrá un fondo negro y un color de 
+letra de amarillo. Se debe hacer mediante un selector de etiqueta.
+*/
+header{
+    color:yellow;
+    background-color: black;
+}
+/*El pie de página (<footer>) tendrá un fondo azul oscuro y un tipo de letra 
+blanco. Se debe hacer mediante un selector de etiqueta.
+*/
+footer{
+    color: whitesmoke;
+    background-color: darkblue;
+}
+/*Se debe hacer dos etiquetas más (a elegir por el alumno) donde se aplique
+ un selector por id.
+*/
+#h2especial{
+    color: aqua;
+    background-color: brown;
+}
+#h2especial2{
+    text-align: center;
+}
+/*Se debe de hacer dos etiquetas más (a elegir por el alumno) donde se aplique
+un selector por clase y por etiqueta combinado.
+*/
+p, h3{
+    color: purple;
+    text-shadow: 0cqi;
+}
+footer.right{
+    text-align: right;
+}
