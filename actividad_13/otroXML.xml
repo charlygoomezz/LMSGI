@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca>
+  <nombre>Biblioteca de Madrid</nombre>
+  <seccion>
+    <libro>
+      <titulo>Todo Arde</titulo>
+      <autor>Juan Gomez-Jurado</autor>
+      <resumen>Tres mujeres que lo han perdido todo y buscan venganza</resumen>
+      <editorial>
+        <nombre>Editorial Ediciones B</nombre>
+        <ciudad>Madrid</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>El ángel de la ciudad</titulo>
+      <autor>Eva García-Sáenz de Urturi</autor>
+      <anio>2020</anio>
+      <resumen>Un inspector se bate en si recurrrir al pasado o centrarse en el futuro.</resumen>
+      <editorial>
+        <nombre>Planeta</nombre>
+        <ciudad>Salamanca</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>Sherlock Holmes</titulo>
+      <autor>Arthur Conan Doyle.</autor>
+      <anio>1887</anio>
+      <resumen>Un detective londinense investiga mjultiples caso de manera peculiar.</resumen>
+      <editorial>
+        <nombre>RBA</nombre>
+        <ciudad>Londres</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>20000 Leguas de viaje submarino</titulo>
+      <autor>Julio Verne</autor>
+      <resumen>Un viaje submarino a un reino de fantasia.</resumen>
+      <editorial>
+		<codigo>237JAS</codigo>
+        <nombre>Editorial Universal</nombre>
+        <ciudad>Paris</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>El padrino</titulo>
+      <autor>Mario Puzo</autor>
+      <anio>1969</anio>
+      <resumen>Historia de las familias de la mafia neoyorquina.</resumen>
+      <editorial>
+        <nombre>Ediciones Vito</nombre>
+        <ciudad>Nueva York</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <!-- Puedes agregar más secciones y libros según sea necesario -->
+</biblioteca>

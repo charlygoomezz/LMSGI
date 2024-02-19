@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+               <xs:minInclusive value="3"/>
+               <xs:maxInclusive value="15"/>
+           </xs:restriction>
+            </xs:simpleType>
+       </xs:element>
+        <xs:element name="NIF" type="xs:string"/>
+        <xs:element name="espanola" type="xs:boolean"/>
+        <xs:element name="capital_social">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:double">
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="direccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipo_via" type="xs:string"/>
+              <xs:element name="nombre_via" type="xs:string"/>
+              <xs:element name="CP" type="xs:string"/>
+              <xs:element name="pais" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleados">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empleado" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="apellidos" type="xs:string"/>
+                    <xs:element name="DNI" type="xs:string"/>
+                    <xs:element name="extranjero" type="xs:boolean"/>
+                    <xs:element name="fecha_nacimiento" type="xs:date"/>
+                    <xs:element name="salario" type="xs:double"/>
+                    <xs:element name="direccion">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="direccion_string" type="xs:string"/>
+                          <xs:element name="pais" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="casado" type="xs:boolean" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
