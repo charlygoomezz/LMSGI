@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videojuego id="1">
+    <nombre>Assassins Creed</nombre>
+    <fecha_creacion>2007</fecha_creacion>
+    <nota>10</nota>
+    <lista_programdores>Patrice Désilets, Jade Raymond</lista_programdores>
+    <programador id="A">
+        <nombre>Patrice</nombre>
+        <apellidos>Désilets</apellidos>
+        <DNI>12345678X</DNI>
+        <fecha_nacimiento>12/04/1980</fecha_nacimiento>
+        <direccion>
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Rio del Oro</nombre_via>
+            <codigo_postal>23456</codigo_postal>
+            <pais>Francia</pais>
+        </direccion>
+    </programador>
+     <programador id="B">
+        <nombre>Jade</nombre>
+        <apellidos>Raymond</apellidos>
+        <DNI>98765432M</DNI>
+        <fecha_nacimiento>8/09/1982</fecha_nacimiento>
+        <direccion>
+            <tipo_via>Avenida</tipo_via>
+            <nombre_via>Del Roscon</nombre_via>
+            <codigo_postal>26374</codigo_postal>
+            <pais>Estados Unidos</pais>
+        </direccion>
+    </programador>
+    <compania id="XYZ">
+        <nombre>Ubisoft</nombre>
+        <NIF>2123413Z</NIF>
+        <direccion>
+            <tipo_via>Boulevard</tipo_via>
+            <nombre_via>Saint Laurent</nombre_via>
+            <codigo_postal>02312</codigo_postal>
+            <pais>Canadá</pais>
+        </direccion>
+     </compania>
+    <web_asociada>
+        <![CDATA[ 
+        <html>
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style type="text/css">
+                h1 {
+                text-align: center;
+                }
+
+                h2 {
+                color: rgb(201, 7, 7);
+                text-align: center;
+                }
+            </style>
+            </head>
+            <body>
+                <h1>Bienvenido a la web de Ubisoft</h1>
+                <h2>Assassins Creed</h2>
+                <a href="https://store-images.s-microsoft.com/image/apps.62121.64148876922571625.4747b43e-3d86-49fc-aa97-ee00c70af4e5.763042e2-6d13-4a8a-a21d-b07d9f5f2cca?q=90&w=480&h=270"></a>
+            </body>
+        </html>
+        ]]>
+    </web_asociada>
+</videojuego>
