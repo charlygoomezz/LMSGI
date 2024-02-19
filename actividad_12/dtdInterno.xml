@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojuego [
+    <!ELEMENT videojuego (nombre_videojuego,fecha_creacion,nota,lista_programadores,compania)>
+
+    <!ELEMENT nombre_videojuego (#PCDATA)>
+    <!ELEMENT fecha_creacion (#PCDATA)>
+    <!ELEMENT nota (#PCDATA)>
+    <!ELEMENT lista_programadores (programador*)>
+
+    <!ELEMENT programador (nombre,apellidos,DNI,fecha_nacimiento,direccion+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT fecha_nacimiento (#PCDATA)>
+
+    <!ELEMENT direccion (tipo_via,nombre_via,codigo_postal,pais)>
+    <!ELEMENT tipo_via (#PCDATA)>
+    <!ELEMENT nombre_via (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT compania (nombre_compania,NIF,direccion)>
+    <!ELEMENT nombre_compania (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+    
+    
+   
+    <!-- Definimos los atributos de la pelicula -->
+    <!ATTLIST videojuego id ID #REQUIRED>
+    <!ATTLIST programador id ID #REQUIRED>
+    <!ATTLIST compania id ID #REQUIRED>
+    
+]>
+<videojuego id="A1">
+    <nombre_videojuego>Assassins Creed</nombre_videojuego>
+    <fecha_creacion>2007</fecha_creacion>
+    <nota>10</nota>
+    <lista_programadores>
+    <programador id="A">
+        <nombre>Patrice</nombre>
+        <apellidos>Désilets</apellidos>
+        <DNI>12345678X</DNI>
+        <fecha_nacimiento>12/04/1980</fecha_nacimiento>
+        <direccion>
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Rio del Oro</nombre_via>
+            <codigo_postal>23456</codigo_postal>
+            <pais>Francia</pais>
+        </direccion>
+    </programador>
+     <programador id="B">
+        <nombre>Jade</nombre>
+        <apellidos>Raymond</apellidos>
+        <DNI>98765432M</DNI>
+        <fecha_nacimiento>8/09/1982</fecha_nacimiento>
+        <direccion>
+            <tipo_via>Avenida</tipo_via>
+            <nombre_via>Del Roscon</nombre_via>
+            <codigo_postal>26374</codigo_postal>
+            <pais>Estados Unidos</pais>
+        </direccion>
+    </programador>
+    </lista_programadores>
+    <compania id="XYZ">
+        <nombre_compania>Ubisoft</nombre_compania>
+        <NIF>2123413Z</NIF>
+        <direccion>
+            <tipo_via>Boulevard</tipo_via>
+            <nombre_via>Saint Laurent</nombre_via>
+            <codigo_postal>02312</codigo_postal>
+            <pais>Canadá</pais>
+        </direccion>
+     </compania>
+</videojuego>
