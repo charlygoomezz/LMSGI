@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="/actividad_19/funciones.js"></script>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        input[type="number"] {
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+   
+</head>
+<div class="contenedor">
+<h1>Ejercicios JavaScript</h1>
+
+<!-- Ejercicio 1: Contador de números pares -->
+<div class="ejercicio">
+<h2>Ejercicio 1: Contador de números pares</h2>
+<input type="number" id="rangoInicio" placeholder="Inicio">
+<input type="number" id="rangoFinal" placeholder="Fin">
+<button onclick="contadorDePares()">Contar pares</button>
+<p id="resultado"></p>
+</div>
+
+
+<!-- Ejercicio 2: Conversor de temperatura -->
+<div class="ejercicio">
+<h2>Ejercicio 2: Conversor de temperatura</h2>
+    <select id="opcionConversion">
+        <option value="celsiusAFahrenheit">Celsius a Fahrenheit</option>
+        <option value="fahrenheitACelsius">Fahrenheit a Celsius</option>
+    </select>
+    <input type="number" id="temperatura" placeholder="Temperatura">
+    <button onclick="convertirTemperature()">Convertir</button>
+    <p id="resultadoTemperatura"></p>
+    </div>
+
+<!-- Ejercicio 3: Adivina el número -->>
+<div class="ejercicio">
+<h2>Ejercicio 3: Adivina el número</h2>
+<p>Intenta adivinar un número entre 1 y 100:</p>
+<input type="number" id="intento" placeholder="Tu intento">
+<button onclick="adivinar()">Comprobar</button>
+<p id="pista"></p>
+</div>
+
+
+<!-- Ejercicio 4: Cambiar el color de pantalla -->>
+<div class="ejercicio">
+<h2>Ejercicio 4: Cambiar el color de pantalla</h2>
+<p>Escribe el nombre de un color o su valor hexadecimal:</p>
+<input type="text" id="color" placeholder="#000000">
+<button onclick="cambiarColorPantalla()">Cambiar color</button>
+</div>
+
+<!-- Ejercicio 5: Usuario y contraseña -->>
+<div class="ejercicio">
+<h2>Ejercicio 5: Usuario y contraseña</h2>
+<p>Escribe tu usuario y contraseña: </p>
+<input type="text" id="usuario" placeholder="usuario">
+<input type="password" id="contrasenia" placeholder="contraseña">
+<button onclick="loguearse()">Comprobar</button>
+</div>
+
+
+<!-- Ejercicio 6: Verificador de números primos -->>
+<div class="ejercicio">
+<h2>Ejercicio 6: Verificador de números primos</h2>
+<p>Escribe un número:</p>
+<input type="number" id="introducirNumero" placeholder="Ingresa un número">
+<button onclick="verificarPrimo()">Comprobar</button>
+<p id="resultado"></p>
+</div>
+
+<!-- Ejercicio 7: Generador de secuencia Fibonacci -->>
+<div class="ejercicio">
+<h2> Ejercicio 7: Generador de secuencia Fibonacci</h2>
+<p>Ingresa el número de términos:</p>
+<input type="number" id="terminos" placeholder="Número de términos">
+<button onclick="secuenciaFibonacci()">Generar</button>
+<p id="fibonacci"></p>
+</div>
+
+</div>    
+</body>
+</html>
